@@ -117,8 +117,8 @@ export default function SupportPage() {
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Preguntas Frecuentes</h2>
+          <div className="max-w-3xl mx-auto pb-8">
+            <h2 className="text-3xl font-bold mb-8 text-center py-3">Preguntas Frecuentes</h2>
 
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (

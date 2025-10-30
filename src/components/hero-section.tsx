@@ -12,7 +12,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-28">
+    <section className="relative flex justify-between overflow-hidden py-36">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
@@ -20,7 +20,7 @@ export function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div
             className={`space-y-8 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
@@ -31,7 +31,7 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance" style={{ lineHeight: "1" }}>
-              <span className="text-primary">Kueree</span>: Tus Clientes <span className="text-gray-500">Amarán Escanearlo</span>
+              Crea y administra tu  <span className="text-primary">menú digital</span>
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -49,7 +49,7 @@ export function HeroSection() {
 
             <div className="flex items-center gap-8 pt-4">
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                <div className="w-18 h-18 bg-primary/10 rounded-full flex items-center justify-center">
                   <QrCode className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -69,50 +69,19 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right content - Phone mockup with animation */}
+          {/* Right content - QR Code with animation */}
           <div
             className={`relative transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <div className="relative mx-auto w-full max-w-sm animate-float">
-              {/* Phone frame */}
-              <div className="relative bg-foreground rounded-[3rem] p-3 shadow-2xl">
-                <div className="bg-background rounded-[2.5rem] overflow-hidden">
-                  {/* Phone screen content */}
-                  <div className="aspect-[9/19] bg-gradient-to-b from-background to-muted/20 p-6 space-y-4">
-                    {/* QR scan animation */}
-                    <div className="flex items-center justify-center py-8">
-                      <div className="relative">
-                        <div className="w-32 h-32 border-4 border-primary rounded-2xl flex items-center justify-center">
-                          <QrCode className="w-20 h-20 text-primary" />
-                        </div>
-                        <div className="absolute inset-0 border-4 border-accent rounded-2xl animate-ping opacity-20" />
-                      </div>
-                    </div>
-
-                    {/* Menu preview */}
-                    <div className="space-y-3">
-                      <div className="h-4 bg-primary/20 rounded w-3/4" />
-                      <div className="space-y-2">
-                        <div className="h-20 bg-card border border-border rounded-lg p-3 space-y-2">
-                          <div className="h-3 bg-muted rounded w-2/3" />
-                          <div className="h-2 bg-muted rounded w-1/2" />
-                        </div>
-                        <div className="h-20 bg-card border border-border rounded-lg p-3 space-y-2">
-                          <div className="h-3 bg-muted rounded w-2/3" />
-                          <div className="h-2 bg-muted rounded w-1/2" />
-                        </div>
-                      </div>
-                    </div>
+            <div className="relative mx-auto w-full max-w-sm">
+              {/* QR scan animation - centered and larger */}
+              <div className="flex items-center justify-center animate-float">
+                <div className="relative">
+                  <div className="w-56 h-56 border-4 border-primary rounded-2xl flex items-center justify-center bg-background shadow-2xl">
+                    <QrCode className="w-48 h-48 text-primary" />
                   </div>
+                  <div className="absolute inset-0 border-4 border-accent rounded-2xl animate-ping opacity-20" />
                 </div>
-              </div>
-
-              {/* Floating elements */}
-              <div
-                className="absolute -top-4 -right-4 w-20 h-20 bg-accent rounded-2xl flex items-center justify-center shadow-lg animate-float"
-                style={{ animationDelay: "0.5s" }}
-              >
-                <Smartphone className="w-10 h-10 text-accent-foreground" />
               </div>
             </div>
           </div>

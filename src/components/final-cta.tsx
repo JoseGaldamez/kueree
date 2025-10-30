@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function FinalCTA() {
   return (
@@ -32,7 +33,9 @@ export function FinalCTA() {
               variant="outline"
               className="text-lg px-8 py-6 bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
             >
-              Hablar con Ventas
+              <Link href="/schedule">
+                Hablar con Ventas
+              </Link>
             </Button>
           </div>
 

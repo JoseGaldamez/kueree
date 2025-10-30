@@ -47,9 +47,9 @@ export default function AboutPage() {
           <div className="prose prose-lg max-w-none mb-16">
             <h2 className="text-3xl font-bold mb-4">Nuestra Historia</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              En 2023, un grupo de emprendedores apasionados por la tecnología y la gastronomía se unió con una misión
+              En 2025, un grupo de emprendedores apasionados por la tecnología y la gastronomía se unió con una misión
               clara: democratizar el acceso a menús digitales de alta calidad. Vimos cómo muchos restaurantes luchaban
-              con soluciones complicadas y costosas, o simplemente usaban PDFs difíciles de navegar.
+              con soluciones complicadas y costosas, imágenes o simplemente usaban PDFs difíciles de navegar.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Decidimos crear algo diferente. Kueree es una plataforma que combina diseño elegante, facilidad de uso y

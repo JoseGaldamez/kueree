@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Calendar } from "lucide-react"
 import Link from "next/link"
+import { ContactForm } from "@/components/contact-form"
 
 export default function ContactPage() {
   return (
@@ -22,47 +23,7 @@ export default function ContactPage() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Nombre
-                    </label>
-                    <Input id="name" placeholder="Tu nombre" />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email
-                    </label>
-                    <Input id="email" type="email" placeholder="tu@email.com" />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Teléfono (opcional)
-                  </label>
-                  <Input id="phone" type="tel" placeholder="+52 123 456 7890" />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                    Asunto
-                  </label>
-                  <Input id="subject" placeholder="¿En qué podemos ayudarte?" />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Mensaje
-                  </label>
-                  <Textarea id="message" placeholder="Cuéntanos más sobre tu proyecto o pregunta..." rows={6} />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full">
-                  Enviar Mensaje
-                </Button>
-              </form>
+              <ContactForm />
             </div>
 
             <div className="space-y-8">
@@ -87,7 +48,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Teléfono</h3>
-                      <p className="text-muted-foreground">+52 (55) 1234 5678</p>
+                      <p className="text-muted-foreground">+504 3175-1455</p>
                       <p className="text-sm text-muted-foreground">Lun - Vie, 9:00 - 18:00</p>
                     </div>
                   </div>
@@ -98,8 +59,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Oficina</h3>
-                      <p className="text-muted-foreground">Ciudad de México, México</p>
-                      <p className="text-sm text-muted-foreground">Visitas con cita previa</p>
+                      <p className="text-muted-foreground">El Progreso, Yoro, Honduras</p>
                     </div>
                   </div>
 
