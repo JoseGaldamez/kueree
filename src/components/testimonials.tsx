@@ -42,10 +42,8 @@ export function Testimonials() {
                 ))}
               </div>
 
-              <blockquote className="text-2xl sm:text-3xl font-medium leading-relaxed text-balance">
-                "Kueree transformó completamente la experiencia de nuestros clientes. Ahora podemos actualizar nuestro
-                menú en segundos y nuestros clientes adoran la facilidad de escanear el QR. Nos ha ahorrado tiempo y
-                dinero."
+              <blockquote className="text-lg sm:text-xl font-medium leading-relaxed text-balance">
+                "Kueree transformó completamente la experiencia de nuestros clientes. Ahora podemos actualizar nuestro menú en segundos y nuestros clientes adoran la facilidad de escanear el QR. Nos ha ahorrado tiempo y dinero."
               </blockquote>
 
               <div className="flex items-center gap-4 pt-4">

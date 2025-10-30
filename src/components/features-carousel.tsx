@@ -16,14 +16,14 @@ const features = [
   },
   {
     icon: Cloud,
-    title: "Integración con Cloudflare",
+    title: "Integración segura en la Nube",
     description: "Velocidad y seguridad de clase mundial. Tu menú carga instantáneamente en cualquier parte del mundo.",
     color: "bg-primary/10",
     iconColor: "text-primary",
   },
   {
     icon: BarChart3,
-    title: "Analíticas Básicas",
+    title: "Analíticas destacadas",
     description: "Descubre qué platos son los más vistos y optimiza tu menú basándote en datos reales.",
     color: "bg-accent/20",
     iconColor: "text-accent-foreground",
@@ -62,7 +62,7 @@ export function FeaturesCarousel() {
   }
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-36 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-balance">

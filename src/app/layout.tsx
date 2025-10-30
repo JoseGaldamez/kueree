@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>
+      <body className={`${inter.variable} font-sans bg-white text-slate-900 antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
         <Toaster />
