@@ -12,14 +12,27 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative flex justify-between overflow-hidden py-36">
+    <section className="relative min-h-screen flex items-center justify-between overflow-hidden py-36">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
+        {/* Background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
+          style={{
+            backgroundImage: "url('/images/fondo-hero.jpg')",
+            backgroundPosition: "center center",
+            backgroundAttachment: "fixed",
+            backgroundSize: "cover"
+          }}
+        />
+        {/* Overlay gradients for better text readability */}
+        <div className="block lg:hidden absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/70" />
+        {/* Additional decorative elements */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div
@@ -42,7 +55,7 @@ export function HeroSection() {
               <Button size="lg" className="text-lg px-8 py-6" asChild>
                 <a href="https://app.kueree.com/registro">Empieza Gratis</a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-amber-300 hover:bg-amber-400 cursor-pointer">
                 Ver Demo
               </Button>
             </div>
@@ -74,15 +87,8 @@ export function HeroSection() {
             className={`relative transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
             <div className="relative mx-auto w-full max-w-sm">
-              {/* QR scan animation - centered and larger */}
-              <div className="flex items-center justify-center animate-float">
-                <div className="relative">
-                  <div className="w-56 h-56 border-4 border-primary rounded-2xl flex items-center justify-center bg-background shadow-2xl">
-                    <QrCode className="w-48 h-48 text-primary" />
-                  </div>
-                  <div className="absolute inset-0 border-4 border-accent rounded-2xl animate-ping opacity-20" />
-                </div>
-              </div>
+
+
             </div>
           </div>
         </div>

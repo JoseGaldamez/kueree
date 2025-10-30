@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`font-sans ${inter.variable} antialiased`}>
+      <body>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
         <Toaster />
