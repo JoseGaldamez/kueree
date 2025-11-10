@@ -32,7 +32,7 @@ export function HeroSection() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div
@@ -53,7 +53,7 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg px-8 py-6" asChild>
-                <a href="https://app.kueree.com/registro">Empieza Gratis</a>
+                <a href="https://app.kueree.com/register">Empieza Gratis</a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-amber-300 hover:bg-amber-400 cursor-pointer">
                 Ver Demo
