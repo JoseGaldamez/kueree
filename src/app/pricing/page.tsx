@@ -18,7 +18,7 @@ export default function PricingPage() {
         "Soporte por email",
       ],
       cta: "Empezar Gratis",
-      href: "https://app.kueree.com/registro",
+      href: "https://app.kueree.com/",
       highlighted: false,
     },
     {
@@ -35,7 +35,7 @@ export default function PricingPage() {
         "Sin marca Kueree",
       ],
       cta: "Empezar Prueba Gratis",
-      href: "https://app.kueree.com/registro",
+      href: "https://app.kueree.com/",
       highlighted: true,
     },
     {
@@ -50,7 +50,7 @@ export default function PricingPage() {
         "Capacitación personalizada",
       ],
       cta: "Contactar Ventas",
-      href: "/contact",
+      href: "https://app.kueree.com/",
       highlighted: false,
     },
   ]
@@ -74,11 +74,10 @@ export default function PricingPage() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`rounded-2xl p-8 ${
-                  plan.highlighted
-                    ? "bg-primary text-primary-foreground shadow-2xl scale-105"
-                    : "bg-card border border-border"
-                }`}
+                className={`rounded-2xl p-8 ${plan.highlighted
+                  ? "bg-primary text-primary-foreground shadow-2xl scale-105"
+                  : "bg-card border border-border"
+                  }`}
               >
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <p
@@ -94,9 +93,8 @@ export default function PricingPage() {
 
                 <Button
                   asChild
-                  className={`w-full mb-8 ${
-                    plan.highlighted ? "bg-accent text-accent-foreground hover:bg-accent/90" : ""
-                  }`}
+                  className={`w-full mb-8 ${plan.highlighted ? "bg-accent text-accent-foreground hover:bg-accent/90" : ""
+                    }`}
                   variant={plan.highlighted ? "default" : "outline"}
                 >
                   <Link href={plan.href}>{plan.cta}</Link>

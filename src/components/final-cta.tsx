@@ -23,8 +23,8 @@ export function FinalCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6 group" asChild>
-              <a href="https://app.kueree.com/register">
-                Únete a Kueree Hoy
+              <a href="/pricing">
+                Comienza gratis
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

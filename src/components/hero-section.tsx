@@ -16,7 +16,7 @@ export function HeroSection() {
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         {/* Background image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
           style={{
             backgroundImage: "url('/images/fondo-hero.jpg')",
@@ -53,7 +53,7 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg px-8 py-6" asChild>
-                <a href="https://app.kueree.com/register">Empieza Gratis</a>
+                <a href="https://app.kueree.com/">Empieza Gratis</a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-amber-300 hover:bg-amber-400 cursor-pointer">
                 Ver Demo
@@ -62,7 +62,7 @@ export function HeroSection() {
 
             <div className="flex items-center gap-8 pt-4">
               <div className="flex items-center gap-2">
-                <div className="w-18 h-18 bg-primary/10 rounded-full flex items-center justify-center">
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
                   <QrCode className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export function HeroSection() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
+                <div className="w-14 h-14 bg-accent/20 rounded-full flex items-center justify-center">
                   <Sparkles className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
